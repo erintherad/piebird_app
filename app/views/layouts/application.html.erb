@@ -14,8 +14,19 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-
-<%= yield %>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">
+          <img alt="Brand" src="<%= asset_path('apc-logo.png') %>">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="deployment.html"><span class="glyphicon glyphicon-plus"></span> Deployment Note</a></li>
+      </ul>
+    </div>
+  </nav>
+  <%= yield %>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
