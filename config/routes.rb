@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  get 'projects/index'
+
   get 'production/showgap'
 
   get 'production/show'
   get 'production/index'
 
-  root to: 'production#index'
+  root to: 'projects#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
