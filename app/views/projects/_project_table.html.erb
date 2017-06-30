@@ -1,0 +1,16 @@
+<table class="table table-bordered table-hover">
+  <tr>
+    <th>PR</th>
+    <th>JIRA Ticket</th>
+    <th>Engineer</th>
+    <th>Product Owner</th>
+  </tr>
+  <% projects.each do |project| %>
+    <tr>
+      <td><a href="pr.html" target="_blank"><%= project.pr_id %></a></td>
+      <td><%= project.description %></td>
+      <td><%= project.engineer %></td>
+      <td><%= project.product_owner %></td>
+    </tr>
+  <% end %>
+</table>
