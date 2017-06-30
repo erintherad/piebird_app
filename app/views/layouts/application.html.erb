@@ -24,7 +24,6 @@
   </nav>
 
   <div class="container-fluid">
-    <%= yield %>
     <div class="col-xs-1"></div>
     <div class="col-xs-9">
       <div class="env-tabs">
@@ -35,7 +34,9 @@
         </ul>
 
         <!-- Tab panes -->
-        <div class="tab-content"></div>
+        <div class="tab-content">
+          <%= yield %>
+        </div>
       </div>
     </div>
     <div class="col-xs-1"></div>
