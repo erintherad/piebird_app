@@ -1,111 +1,97 @@
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-1"></div>
-      <div class="col-xs-9">
-        <div class="env-tabs">
-
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade in active" id="production">
-              <div class="panel panel-success">
-                <div class="panel-body">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Version <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">1.1.1</a></li>
-                      <li><a href="#">1.1.2</a></li>
-                      <li><a href="#">1.1.3</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Sprint <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">A</a></li>
-                      <li><a href="#">B</a></li>
-                      <li><a href="#">C</a></li>
-                    </ul>
-                  </div>
-                  <br>
-                  <br>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h3 class="panel-title"><a href="#collapse" data-toggle="collapse" data-target="#collapse">Deployment Notes</a></h3>
-                    </div>
-                    <div class="panel-body collaps in" id="collapse">
-                      <h3>Version 1.1.1</h3>
-                      <h4>Sprint A | 4/17/17</h4>
-                      <p>Jean shorts marfa pok pok, shoreditch you probably haven't heard of them food truck bitters chia. Thundercats wayfarers DIY tacos schlitz, ennui whatever viral blog pug polaroid. Umami lumbersexual hexagon tumeric, etsy echo park master cleanse intelligentsia af. Woke bitters la croix cold-pressed mixtape plaid. Iceland heirloom offal iPhone salvia before they sold out. Flexitarian kinfolk quinoa, seitan vinyl marfa ugh before they sold out small batch mlkshk helvetica actually selvage. Trust fund heirloom pabst photo booth, kombucha umami food truck artisan brooklyn flexitarian activated charcoal selfies vegan intelligentsia wayfarers.</p>
-                      <dl class="">
-                        <dt>Features</dt>
-                        <ul>
-                          <li>Lorem ipsum dolor sit amet</li>
-                          <li>Consectetur adipiscing eli</li>
-                          <li>Integer molestie lorem at massa</li>
-                          <li>Facilisis in pretium nisl aliquet</li>
-                        </ul>
-                        <dt>Fixes</dt>
-                        <ul>
-                          <li>Lorem ipsum dolor sit amet</li>
-                          <li>Consectetur adipiscing eli</li>
-                          <li>Integer molestie lorem at massa</li>
-                          <li>Facilisis in pretium nisl aliquet</li>
-                        </ul>
-                      </dl>
-                    </div>
-                  </div>
-                  <%= render 'project_table', projects: @projects %>
-                </div>
-                <div class="panel-heading">
-                  <p class="panel-title text-center">Last Updated: 12:00PM</p>
-                </div>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="staging">
-              <div class="panel panel-warning">
-                <div class="panel-body">
-                  <table class="table table-bordered table-hover">
-                    <tr>
-                      <th>Heroku App</th>
-                      <th>JIRA Ticket</th>
-                      <th>Description</th>
-                      <th>Engineer</th>
-                      <th>Product Owner</th>
-                    </tr>
-                    <tr>
-                      <td><a href="pr.html" target="_blank">23483</a></td>
-                      <td><a href="pr.html" target="_blank">23483</a</td></td>
-                      <td>This is an example Jira Ticket, full of details!</td>
-                      <td>Grace Hopper</td>
-                      <td>Walter White</td>
-                    </tr>
-                    <tr>
-                      <td><a href="pr.html" target="_blank">123</a</td>
-                        <td><a href="pr.html" target="_blank">123</a</td></td>
-                      <td>This is an example Jira Ticket, full of details!</td>
-                      <td>George Clooney</td>
-                      <td>Abe Lincoln</td>
-                    </tr>
-                    <tr>
-                      <td><a href="pr.html" target="_blank">3486</a</td>
-                        <td><a href="pr.html" target="_blank">3486</a</td></td>
-                      <td>This is an example Jira Ticket, full of details!</td>
-                      <td>Chuck Norris</td>
-                      <td>Oprah Winfrey</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="panel-heading">
-                  <p class="panel-title text-center"><a  href="https://staging.applepiecapital.com/">Last Updated: 12:00PM</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
+<div role="tabpanel" class="tab-pane fade in active" id="production">
+  <div class="panel panel-success">
+    <div class="panel-body">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Version <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">1.1.1</a></li>
+          <li><a href="#">1.1.2</a></li>
+          <li><a href="#">1.1.3</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sprint <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">A</a></li>
+          <li><a href="#">B</a></li>
+          <li><a href="#">C</a></li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><a href="#collapse" data-toggle="collapse" data-target="#collapse">Deployment Notes</a></h3>
+        </div>
+        <div class="panel-body collapse" id="collapse">
+          <h3>Version 1.1.1</h3>
+          <h4>Sprint A | 4/17/17</h4>
+          <p>Jean shorts marfa pok pok, shoreditch you probably haven't heard of them food truck bitters chia. Thundercats wayfarers DIY tacos schlitz, ennui whatever viral blog pug polaroid. Umami lumbersexual hexagon tumeric, etsy echo park master cleanse intelligentsia af. Woke bitters la croix cold-pressed mixtape plaid. Iceland heirloom offal iPhone salvia before they sold out. Flexitarian kinfolk quinoa, seitan vinyl marfa ugh before they sold out small batch mlkshk helvetica actually selvage. Trust fund heirloom pabst photo booth, kombucha umami food truck artisan brooklyn flexitarian activated charcoal selfies vegan intelligentsia wayfarers.</p>
+          <dl class="">
+            <dt>Features</dt>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing eli</li>
+              <li>Integer molestie lorem at massa</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+            </ul>
+            <dt>Fixes</dt>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing eli</li>
+              <li>Integer molestie lorem at massa</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+            </ul>
+          </dl>
         </div>
       </div>
-      <div class="col-xs-1"></div>
+      <%= render 'project_table', projects: @projects %>
+    </div>
+    <div class="panel-heading">
+      <p class="panel-title text-center">Last Updated: 12:00PM</p>
     </div>
   </div>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="staging">
+  <div class="panel panel-warning">
+    <div class="panel-body">
+      <table class="table table-bordered table-hover">
+        <tr>
+          <th>Heroku App</th>
+          <th>JIRA Ticket</th>
+          <th>Description</th>
+          <th>Engineer</th>
+          <th>Product Owner</th>
+        </tr>
+        <tr>
+          <td><a href="pr.html" target="_blank">23483</a></td>
+          <td><a href="pr.html" target="_blank">23483</a</td></td>
+          <td>This is an example Jira Ticket, full of details!</td>
+          <td>Grace Hopper</td>
+          <td>Walter White</td>
+        </tr>
+        <tr>
+          <td><a href="pr.html" target="_blank">123</a</td>
+            <td><a href="pr.html" target="_blank">123</a</td></td>
+          <td>This is an example Jira Ticket, full of details!</td>
+          <td>George Clooney</td>
+          <td>Abe Lincoln</td>
+        </tr>
+        <tr>
+          <td><a href="pr.html" target="_blank">3486</a</td>
+            <td><a href="pr.html" target="_blank">3486</a</td></td>
+          <td>This is an example Jira Ticket, full of details!</td>
+          <td>Chuck Norris</td>
+          <td>Oprah Winfrey</td>
+        </tr>
+      </table>
+    </div>
+    <div class="panel-heading">
+      <p class="panel-title text-center"><a  href="https://staging.applepiecapital.com/">Last Updated: 12:00PM</a></p>
+    </div>
+  </div>
+</div>

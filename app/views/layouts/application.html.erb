@@ -26,17 +26,15 @@
   <div class="container-fluid">
     <div class="col-xs-1"></div>
     <div class="col-xs-9">
-      <div class="env-tabs">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#production" aria-controls="production" role="tab" data-toggle="tab">Production</a></li>
-          <li role="presentation"><a href="#staging" aria-controls="staging" role="tab" data-toggle="tab">Staging</a></li>
-        </ul>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#production" aria-controls="production" role="tab" data-toggle="tab">Production</a></li>
+        <li role="presentation"><a href="#staging" aria-controls="staging" role="tab" data-toggle="tab">Staging</a></li>
+      </ul>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
+      <!-- Tab panes -->
+      <div class="tab-content">
           <%= yield %>
-        </div>
       </div>
     </div>
     <div class="col-xs-1"></div>

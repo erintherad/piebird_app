@@ -6,21 +6,21 @@ class Project
         pr_id: 123,
         description: 'This is an example Jira Ticket, full of details!',
         engineer: 'Grace Hopper',
-        product_owner: 'Walter White'
+        product_owner: 'John Doe'
       }),
       OpenStruct.new({
-        id: 1,
-        pr_id: 123,
+        id: 2,
+        pr_id: 456,
         description: 'This is an example Jira Ticket, full of details!',
-        engineer: 'Grace Hopper',
-        product_owner: 'White'
+        engineer: 'Oprah Winfrey',
+        product_owner: 'Steve Doe'
       }),
       OpenStruct.new({
-        id: 1,
-        pr_id: 123,
+        id: 3,
+        pr_id: 789,
         description: 'This is an example Jira Ticket, full of details!',
-        engineer: 'Grace Hopper',
-        product_owner: 'Walter White'
+        engineer: 'Maya Angelou',
+        product_owner: 'Jack Doe'
       })
     ]
   end
