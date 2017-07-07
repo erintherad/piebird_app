@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pie Bird</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img alt="Brand" src="assets/apc-logo.png">
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Deployment.html"><span class="glyphicon glyphicon-plus"></span> Deployment Note</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-9">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">PR #23483</h2>
+            </div>
+            <div class="panel-body">
+              <div class="container-fluid">
+              	<div class="row">
+              		<section>
+                      <div class="wizard">
+                          <div class="wizard-inner">
+                              <div class="connecting-line"></div>
+                              <ul class="nav nav-tabs" role="tablist">
+
+                                  <li role="presentation" class="active">
+                                      <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Branch">
+                                          <span class="round-tab">
+                                              <i class="glyphicon glyphicon-play"></i>
+                                          </span>
+                                      </a>
+                                  </li>
+
+                                  <li role="presentation" class="">
+                                      <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Pull Request">
+                                          <span class="round-tab">
+                                              <i class="glyphicon glyphicon-indent-left"></i>
+                                          </span>
+                                      </a>
+                                  </li>
+                                  <li role="presentation" class="">
+                                      <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Reviewed">
+                                          <span class="round-tab">
+                                              <i class="glyphicon glyphicon-eye-open"></i>
+                                          </span>
+                                      </a>
+                                  </li>
+
+                                  <li role="presentation" class="">
+                                      <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Completed">
+                                          <span class="round-tab">
+                                              <i class="glyphicon glyphicon-ok"></i>
+                                          </span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <form role="form">
+                              <div class="tab-content">
+                                  <div class="tab-pane active" role="tabpanel" id="step1">
+                                      <h3 class="pull-left">Branch created for <a href="#">APC-123</a></h3>
+                                      <ul class="list-inline pull-right">
+                                          <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                      </ul>
+                                      <div class="clearfix">
+                                        <img src="https://avatars1.githubusercontent.com/u/11008274?v=3&s=88" alt="github-avatar" class="github-avatar"
+                                        <p class="pr-message">Initiated this branch on 4:00pm on 04/16/17</p>
+                                        <h2>Description</h2>
+                                        <p>Warp Arr killick parley keelhaul wench hulk hearties hang the jib Plate Fleet. Gibbet belay ballast Sink me crimp code of conduct deadlights parley bounty Barbary Coast. Hearties rum careen reef Privateer cutlass snow fore hardtack swab.
+Fire in the hole careen hang the jib hearties driver spyglass belay yardarm gangplank pink. Swing the lead Barbary Coast belay hogshead fire ship wherry piracy gangway dead men tell no tales rigging. Bowsprit main sheet smartly ho gangway squiffy hardtack bilge rat spirits flogging.</p>
+                                      </div>
+                                  </div>
+                                  <div class="tab-pane" role="tabpanel" id="step2">
+                                      <h3 class="pull-left">PR for <a href="#">APC-123</a> Submitted</h3>
+                                      <ul class="list-inline pull-right">
+                                          <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                          <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                      </ul>
+                                      <div class="clearfix">
+                                        <img src="https://avatars1.githubusercontent.com/u/11008274?v=3&s=88" alt="github-avatar" class="github-avatar">
+                                        <p class="pr-message">Submitted this PR on 4:00pm on 04/16/17</p>
+                                      </div>
+                                      <hr>
+                                      <img class="checks" src="assets/pr.png" alt="">
+                                  </div>
+                                  <div class="tab-pane" role="tabpanel" id="step3">
+                                      <h3 class="pull-left">PR for <a href="#">APC-123</a> Reviewed</h3>
+                                      <ul class="list-inline pull-right">
+                                          <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                          <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
+                                      </ul>
+                                      <div class="clearfix">
+                                        <img src="https://avatars1.githubusercontent.com/u/11008274?v=3&s=88" alt="github-avatar" class="github-avatar">
+                                        <p class="pr-message">Reviewed this PR on 4:00pm on 04/16/17</p>
+                                      </div>
+                                      <hr>
+                                      <img class="checks" src="assets/checks.png" alt="">
+                                  </div>
+                                  <div class="tab-pane" role="tabpanel" id="complete">
+                                    <h3 class="pull-left">PR for <a href="#">APC-123</a> Completed</h3>
+                                    <ul class="list-inline pull-right">
+                                      <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                    </ul>
+                                    <div class="clearfix">
+                                      <img src="https://avatars1.githubusercontent.com/u/11008274?v=3&s=88" alt="github-avatar" class="github-avatar">
+                                      <p class="pr-message">Merged this PR on 4:00pm on 04/16/17</p>
+                                    </div>
+                                    <hr>
+                                    <img class="checks" src="assets/merged.png" alt="">
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </section>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-1"></div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
